@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_register/features/auth/presentation/screens/login_screen.dart';
 
 void main() {
   runApp(const Form());
@@ -12,8 +13,7 @@ class Form extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ,
+      home: LoginScreen(),
     );
   }
 }
-
