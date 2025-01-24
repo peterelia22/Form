@@ -20,9 +20,12 @@ class LoginForm extends StatelessWidget {
         CustomTextField(
           labelText: 'Password',
           hintText: '*******',
+          isPassword: true,
         ),
         SizedBox(height: 10),
-        CustomButton(),
+        CustomButton(
+          text: 'Log in',
+        ),
       ],
     );
   }

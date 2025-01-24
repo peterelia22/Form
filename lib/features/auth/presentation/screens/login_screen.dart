@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_register/core/constants/app_styles.dart';
 import 'package:login_register/core/widgets/custom_text_field.dart';
+import 'package:login_register/features/auth/presentation/screens/register_screen.dart';
 import 'package:login_register/features/auth/presentation/widgets/login_form.dart';
 import '../widgets/social_media_auth.dart';
 import '../widgets/welcome_text_widget.dart';
@@ -56,17 +57,26 @@ class LoginScreen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            Center(
-              child: Text.rich(
-                TextSpan(
-                  text: 'Don\'t have an account? ',
-                  style: AppStyles.labelTextStyle,
-                  children: <TextSpan>[
-                    TextSpan(
-                        text: 'Sign Up',
-                        style: AppStyles.labelTextStyle
-                            .copyWith(color: Color(0xffE2BCB1))),
-                  ],
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    (MaterialPageRoute(builder: (context) {
+                      return const RegisterScreen();
+                    })));
+              },
+              child: Center(
+                child: Text.rich(
+                  TextSpan(
+                    text: 'Don\'t have an account? ',
+                    style: AppStyles.labelTextStyle,
+                    children: <TextSpan>[
+                      TextSpan(
+                          text: 'Sign Up',
+                          style: AppStyles.labelTextStyle
+                              .copyWith(color: Color(0xffE2BCB1))),
+                    ],
+                  ),
                 ),
               ),
             ),

@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import '../constants/app_styles.dart';
 
 class CustomButton extends StatelessWidget {
+  final String text;
   const CustomButton({
     super.key,
+    required this.text,
   });
 
   @override
@@ -21,8 +23,8 @@ class CustomButton extends StatelessWidget {
           ),
         ),
         onPressed: () {},
-        child: const Text(
-          'Log in',
+        child: Text(
+          text,
           style: AppStyles.buttonTextStyle,
         ),
       ),
