@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_register/core/constants/app_styles.dart';
+import 'package:login_register/core/widgets/custom_text_field.dart';
+import 'package:login_register/features/auth/presentation/widgets/login_form.dart';
 import '../widgets/welcome_text_widget.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -23,6 +25,10 @@ class LoginScreen extends StatelessWidget {
               height: 10,
             ),
             WelcomeTextWidget(),
+            SizedBox(
+              height: 20,
+            ),
+            LoginForm()
           ],
         ),
       ),

@@ -21,4 +21,9 @@ class AppStyles {
       fontSize: 16,
       fontFamily: 'Quicksand',
       fontWeight: FontWeight.w300);
+  static const TextStyle buttonTextStyle = TextStyle(
+      color: Colors.white,
+      fontSize: 18,
+      fontFamily: 'Quicksand',
+      fontWeight: FontWeight.w700);
 }
